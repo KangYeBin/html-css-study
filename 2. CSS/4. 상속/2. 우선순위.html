@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* 여러 가지의 스타일이 동시에 적용되는 경우
+    명시도 점수에 따른 우선순위가 제일 높은 스타일이 적용 */
+
+    /* 100점 */
+    #i-yellow {
+      color: yellow;
+    }
+
+    /* 10점 */
+    .c-green {
+      color: green;
+    }
+
+    /* 무한대점 */
+    div {
+      color: violet !important;
+      width: 200px;
+    }
+
+    /* 1점 */
+    div {
+      color: red;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1000점 -->
+  <div id="i-yellow" class="c-green" style="color: orange;">Hello</div>
+
+</body>
+
+</html>
