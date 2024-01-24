@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* orange의 다음 형제 요소 */
+    .orange + li {
+      color: yellow;
+    }
+
+    /* 모두 li이므로 딸기의 다음 요소 사과, 사과의 다음 요소 오렌지..
+    -> 딸기 제외 모두 적용됨 */
+    li + li {
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ul>li*5 -->
+  <ul>
+    <li>딸기</li>
+    <li>사과</li>
+    <li class="orange">오렌지</li>
+    <li>망고</li>
+    <li>포도</li>
+  </ul>
+
+</body>
+
+</html>
