@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .parent {
+      width: 1000px;
+      height: 300px;
+      border: 4px solid blue;
+      margin: 20px;
+    }
+
+    .child {
+      background: orange;
+      /* 절대 크기를 지키고 싶을 때*/
+      max-width: 400px;
+      /* 최소 크기를 보장할 때*/
+      min-height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
+</body>
+
+</html>
