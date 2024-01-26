@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container {
+      width: 700px;
+      padding: 20px;
+      border: 3px solid red;
+      /* overflow는 clear를 해제하는 용도가 아니고
+        실제로 overflow를 사용해야할 때에 중첩해서 사용불가*/
+      /* overflow: hidden; */
+    }
+
+    .box {
+      width: 200px;
+      height: 150px;
+      border: 3px solid green;
+      background-color: yellow;
+      font-size: 50px;
+      float: left;
+    }
+
+    /* 가상 클래스를 부모 요소에 추가 */
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /* .clear-box{
+      clear: both;
+    } */
+  </style>
+</head>
+
+<body>
+
+  <div class="container clearfix">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <!-- 쓸데없는 요소가 늘어나므로 권장X -->
+    <!-- <div class="clear-box"></div> -->
+  </div>
+
+</body>
+
+</html>
