@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container {
+      width: fit-content;
+      border: 2px solid red;
+      padding: 20px;
+      /* 겉을 감싸고 있는 container에 flex 지정 */
+      display: flex;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black
+    }
+
+    .container2,
+    .container3 {
+      /* 내부 아이템뿐만 아니라 외부 container도 가로로 */
+      display: inline-flex;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="container2">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="container3">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+
+</body>
+
+</html>
